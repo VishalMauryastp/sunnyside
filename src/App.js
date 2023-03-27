@@ -1,24 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import GraphicDekstop from "./components/GraphicDekstop";
+import GraphicMobile from "./components/GraphicMobile";
+import Header from "./components/Header";
+import Showcase from "./components/Showcase";
+import StandOut from "./components/StandOut";
+import Transfrom from "./components/Transfrom";
+import Testimonials from "./components/Testimonials";
+import GridMobile from "./components/GridMobile";
+import GridDekstop from "./components/GridDekstop";
+import Footer from "./components/Footer";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+      <Header />
+      <Showcase />
+      <div className="flex justify-center items-center lg:w-full">
+      <Transfrom />
+      </div>
+      <div className="flex justify-center items-center">
+      <StandOut />
+      </div>
+      
+
+      <div className="block md:hidden">
+        <GraphicMobile />
+      </div>
+      <div className="hidden md:block">
+        <GraphicDekstop />
+      </div>
+      <Testimonials />
+      <div className="block md:hidden">
+        <GridMobile />
+      </div>
+      <div className="hidden md:block">
+      <GridDekstop />
     </div>
+    
+    <Footer/>
+   
+
+    </>
   );
 }
 
