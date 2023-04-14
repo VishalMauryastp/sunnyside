@@ -24,7 +24,7 @@ const Testimonials = () => {
                     )}
 
                 </div>
-                <section className="flex flex-wrap">
+                {/* <section className="flex flex-wrap">
                         <Card
                             images="a.jpg"
                             name="sjbf"
@@ -33,7 +33,7 @@ const Testimonials = () => {
                         />
 
                 
-                </section>
+                </section> */}
 
 
             </section>
